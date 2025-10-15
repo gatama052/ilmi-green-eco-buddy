@@ -86,21 +86,27 @@ export const Chatbot = () => {
           const jsonStr = line.slice(6).trim();
           if (jsonStr === "[DONE]") break;
 
-          try {
-            const parsed = JSON.parse(jsonStr);
-            const content = parsed.choices?.[0]?.delta?.content;
-            if (content) {
-              assistantMessage += content;
-              setMessages((prev) => {
-                const newMessages = [...prev];
-                newMessages[newMessages.length - 1] = {
-                  role: "assistant",
-                  content: assistantMessage,
-                };
-                return newMessages;
-              });
-            }
-          } catch {
+            try {
+              const parsed = JSON.parse(jsonStr);
+              const content = parsed.choices?.[0]?.delta?.content;
+              if (content) {
+                assistantMessage += content;
+                // Remove markdown formatting
+                const cleanContent = assistantMessage
+                  .replace(/#{1,6}\s/g, '')
+                  .replace(/\*\*\*/g, '')
+                  .replace(/\*\*/g, '')
+                  .replace(/\*/g, '');
+                setMessages((prev) => {
+                  const newMessages = [...prev];
+                  newMessages[newMessages.length - 1] = {
+                    role: "assistant",
+                    content: cleanContent,
+                  };
+                  return newMessages;
+                });
+              }
+            } catch {
             textBuffer = line + "\n" + textBuffer;
             break;
           }
@@ -131,7 +137,7 @@ export const Chatbot = () => {
 
       {/* Chat Window */}
       {isOpen && (
-        <Card className="fixed bottom-6 right-6 w-[380px] h-[500px] flex flex-col shadow-2xl border-border/50 bg-card/95 backdrop-blur-md">
+        <Card className="fixed inset-4 md:inset-6 flex flex-col shadow-2xl border-border/50 bg-card/95 backdrop-blur-md z-50">
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b border-border bg-gradient-to-r from-primary/10 to-primary-light/10 rounded-t-lg">
             <div className="flex items-center gap-2">

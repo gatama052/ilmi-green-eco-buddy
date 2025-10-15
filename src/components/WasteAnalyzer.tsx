@@ -93,18 +93,18 @@ export const WasteAnalyzer = () => {
           <Button
             variant={analysisType === "image" ? "default" : "outline"}
             onClick={() => setAnalysisType("image")}
-            className="flex-1"
+            className="flex-1 min-w-0"
           >
-            <Upload className="w-4 h-4 mr-2" />
-            Upload Gambar
+            <Upload className="w-4 h-4 mr-2 flex-shrink-0" />
+            <span className="truncate">Upload Gambar</span>
           </Button>
           <Button
             variant={analysisType === "text" ? "default" : "outline"}
             onClick={() => setAnalysisType("text")}
-            className="flex-1"
+            className="flex-1 min-w-0"
           >
-            <FileText className="w-4 h-4 mr-2" />
-            Tulis Deskripsi
+            <FileText className="w-4 h-4 mr-2 flex-shrink-0" />
+            <span className="truncate">Tulis Deskripsi</span>
           </Button>
         </div>
 
