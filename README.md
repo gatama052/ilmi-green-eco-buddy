@@ -19,9 +19,4 @@ Sistem akan secara otomatis mengklasifikasikan kategori sampah dan memberikan **
 ## Tujuan Proyek
 Meningkatkan **kesadaran masyarakat** terhadap pengelolaan sampah yang bijak dan berkelanjutan dengan bantuan teknologi AI.  
 _Bersama AI, kita belajar mencintai bumi dengan cara yang cerdas, bermanfaat, dan modern._ 
-
-## Demo & Repositori
-- **Website (Demo):** https://ilmigreen.vercel.app  
-- **GitHub Repository:** https://github.com/gatama052/eco-bot-detect-recycle  
-
 _Developed with ❤️ by Yoga Pratama_
