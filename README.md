@@ -1,22 +1,27 @@
 #  IlmiGreen
 
-**IlmiGreen** adalah aplikasi web berbasis **AI** yang membantu pengguna mengenali jenis sampah — **organik, anorganik, dan B3** — hanya dengan mengunggah foto.  
+**IlmiGreen** adalah aplikasi web berbasis **AI** yang membantu pengguna mengenali jenis sampah **organik, anorganik, dan B3 (Bahan Berbahaya dan Beracun)** hanya dengan mengunggah foto.  
 Sistem akan secara otomatis mengklasifikasikan kategori sampah dan memberikan **edukasi tentang pengelolaan limbah yang benar** untuk mendorong kesadaran lingkungan masyarakat.
 
-## Fitur Utama
--  **Deteksi Sampah Otomatis:** Unggah foto, sistem langsung mengenali jenis sampah.  
--  **IlmiGreen Assistant:** Chatbot interaktif untuk edukasi daur ulang dan pengurangan limbah.  
-- **Edukasi Lingkungan:** Memberikan tips pengelolaan dan pembuangan yang ramah lingkungan.  
-- **AI-Powered Learning:** Teknologi AI membantu pengguna memahami perbedaan jenis sampah dengan cepat.  
+##  Fitur Utama
+- **Deteksi Sampah Otomatis:** Unggah foto, sistem langsung mengenali jenis sampah menggunakan teknologi AI. 
+- **IlmiGreen Assistant:** Chatbot interaktif untuk edukasi daur ulang, pengurangan limbah, dan tips kebersihan lingkungan.
 
 ## Teknologi yang Digunakan
-- **Lovable** – AI development platform  
-- **Supabase** – Database dan autentikasi  
-- **Vercel** – Deployment web  
-- **TailwindCSS** – Styling responsif  
-- **TypeScript + React (Vite)** – Frontend utama  
+- **Lovable AI** – Platform pengembangan dan integrasi AI  
+- **Vercel** – Deployment dan hosting website  
 
 ## Tujuan Proyek
-Meningkatkan **kesadaran masyarakat** terhadap pengelolaan sampah yang bijak dan berkelanjutan dengan bantuan teknologi AI.  
-_Bersama AI, kita belajar mencintai bumi dengan cara yang cerdas, bermanfaat, dan modern._ 
+Meningkatkan **kesadaran masyarakat terhadap pengelolaan sampah yang bijak dan berkelanjutan** dengan bantuan teknologi AI.  
+_Bersama AI, kita belajar mencintai bumi dengan cara yang cerdas, bermanfaat, dan modern._  
+
+##  Demo & Repositori
+- **Website (Demo):** [https://ilmigreen.vercel.app](https://ilmigreen.vercel.app)  
+- **GitHub Repository:** [https://github.com/gatama052/eco-bot-detect-recycle](https://github.com/gatama052/eco-bot-detect-recycle)  
+
+##  Tentang Proyek
+Proyek ini dibuat khusus untuk **VibeCoding.id Hackathon 2025**  
+dengan tema *“Meningkatkan Produktivitas Berbasis AI”*.  
+Dikembangkan menggunakan teknologi modern untuk mendukung solusi ramah lingkungan berbasis kecerdasan buatan.
+
 _Developed with ❤️ by Yoga Pratama_
